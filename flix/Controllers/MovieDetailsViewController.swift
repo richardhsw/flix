@@ -38,15 +38,17 @@ class MovieDetailsViewController: UIViewController {
         backdropView.af_setImage(withURL: backdropURL!)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func showTrailer(_ sender: Any) {
+        performSegue(withIdentifier: "ShowMovieTrailer", sender: nil)
     }
-    */
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowMovieTrailer" {
+            let trailerController = segue.destination as! TrailerViewController
+            
+            trailerController.movie = movie
+        }
+    }
 
 }
