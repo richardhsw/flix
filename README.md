@@ -19,8 +19,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### Notes
 I ran into an issue displaying the pictures in the CollectionViewCell correctly (see image below). No matter what changes I made to the Swift script, or the ImageView's attributes, the problem still could not be solved. After a few hours of research, I solved the problem by going to the CollectionView's size inspector and changing the "Estimate Size" from "Automatic" to None". 
-
-![Screenshot of poster image issue](https://s5.gifyu.com/images/Screen-Shot-2020-01-27-at-18.26.26.png | width=103)
+<img src="https://s5.gifyu.com/images/Screen-Shot-2020-01-27-at-18.26.26.png" width="103">
 
 ---
 
