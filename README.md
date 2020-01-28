@@ -43,4 +43,3 @@ I ran into an issue displaying the pictures in the CollectionViewCell correctly 
 <img src="https://s5.gifyu.com/images/flix_phone.gif" width=250><br>
 
 ### Notes
-Describe any challenges encountered while building the app.
