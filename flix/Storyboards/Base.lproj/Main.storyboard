@@ -222,9 +222,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JY0-MP-WH2">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JY0-MP-WH2">
+                                <rect key="frame" x="0.0" y="88" width="414" height="788"/>
                                 <color key="backgroundColor" red="0.047058823530000002" green="0.043137254899999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7V8-Tz-zdk">
                                     <size key="itemSize" width="135" height="202"/>
@@ -249,12 +248,19 @@
                                         <size key="customSize" width="135" height="202"/>
                                         <connections>
                                             <outlet property="posterView" destination="HgB-T0-6AA" id="jDl-V1-UA9"/>
+                                            <segue destination="jS1-Vs-DzS" kind="show" id="DnA-1F-0Uw"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.047058823530000002" green="0.043137254899999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JY0-MP-WH2" firstAttribute="trailing" secondItem="1CV-v0-c7l" secondAttribute="trailing" id="SU7-WR-R8a"/>
+                            <constraint firstAttribute="bottom" secondItem="JY0-MP-WH2" secondAttribute="bottom" constant="20" symbolic="YES" id="Sen-df-AQl"/>
+                            <constraint firstItem="JY0-MP-WH2" firstAttribute="leading" secondItem="1CV-v0-c7l" secondAttribute="leading" id="gvQ-xn-yjS"/>
+                            <constraint firstItem="JY0-MP-WH2" firstAttribute="top" secondItem="1CV-v0-c7l" secondAttribute="top" id="xhd-fu-axB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1CV-v0-c7l"/>
                     </view>
                     <navigationItem key="navigationItem" title="Superheroes" id="wXl-Wd-i3r"/>
@@ -294,5 +300,8 @@
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="superhero_tabbar_item" width="21" height="23"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DnA-1F-0Uw"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.87058823529999996" green="0.70980392160000005" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
