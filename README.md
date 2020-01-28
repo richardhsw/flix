@@ -15,7 +15,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [x] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
 
 ### App Walkthough GIF
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src="http://g.recordit.co/GNS66iW8Bi.gif" width=250><br>
 
 ### Notes
 I ran into an issue displaying the pictures in the CollectionViewCell correctly (see image below). No matter what changes I made to the Swift script, or the ImageView's attributes, the problem still could not be solved. After a few hours of research, I solved the problem by going to the CollectionView's size inspector and changing the "Estimate Size" from "Automatic" to None". 
